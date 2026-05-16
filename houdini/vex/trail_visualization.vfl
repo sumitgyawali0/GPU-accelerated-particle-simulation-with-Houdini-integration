@@ -1,0 +1,5 @@
+// Attribute Wrangle on a Trail SOP output — emphasize motion paths
+
+float speed = length(v@v);
+@Cd = lerp(set(0.1, 0.2, 0.8), set(1, 0.9, 0.5), fit(speed, 0, 15, 0, 1));
+@Alpha = fit(speed, 0, 15, 0.3, 1.0);

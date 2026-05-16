@@ -1,0 +1,13 @@
+// Point Wrangle — velocity heatmap and particle scale (Sprint 5 visualization)
+// Attributes: v (@v), Cd (@Cd), pscale
+
+float speed = length(v@v);
+
+@Cd = lerp(set(0, 0, 1), set(1, 1, 1), fit(speed, 0, 10, 0, 1));
+@pscale = fit(speed, 0, 10, 0.02, 0.08);
+
+// Optional trail hint: copy to prev_P if present
+if (hasattrib(0, "point", "prev_P")) {
+    vector delta = @P - point(0, "prev_P", @ptnum);
+    f@trail = length(delta);
+}
