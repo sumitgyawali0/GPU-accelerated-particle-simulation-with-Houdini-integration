@@ -2,7 +2,6 @@
 
 GPU-accelerated particle simulation with Houdini integration and a procedural SDF ray marcher (C++17, CUDA, OpenGL).
 
-Further detail: [docs/SUBMISSION.md](docs/SUBMISSION.md) · [docs/architecture.md](docs/architecture.md) · [docs/benchmarks.md](docs/benchmarks.md)
 
 ---
 
